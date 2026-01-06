@@ -100,6 +100,9 @@ $description = "$keyword — Create and share self-destructing messages online w
   ]
 }
 </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
+     crossorigin="anonymous"></script>
+
 </head>
 <body>
   <main class="container">
@@ -111,17 +114,15 @@ $description = "$keyword — Create and share self-destructing messages online w
     <section class="tool">
       <label for="message">Enter your secret message:</label>
       <textarea id="message" rows="6" placeholder="Type your confidential message here..."></textarea>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="1753877472"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="ad-slot">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-2885050972904135"
+       data-ad-slot="1753877472"></ins>
+</div>
+
       <div class="options">
         <label>Message expires after:
           <select id="expiry">
@@ -150,17 +151,15 @@ $description = "$keyword — Create and share self-destructing messages online w
         <p>TempMessage.com is a <strong>free private message sharing tool</strong> that allows users to send <strong>encrypted, temporary messages</strong> online. Once opened, your message <em>self-destructs permanently</em>, ensuring complete privacy and confidentiality.</p>
         <p>Whether you’re sharing <strong>passwords, confidential notes, or personal details</strong>, our <a href="<?php echo $domain; ?>">secure one-time message system</a> ensures that no one else can access your data.</p>
       </article>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="2995355698"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+      <div class="ad-slot">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-2885050972904135"
+       data-ad-slot="1753877472"></ins>
+</div>
+
       <h3>Why Choose Temp Message?</h3>
       <ul>
         <li>🕵️ <strong>End-to-End Encryption:</strong> Messages are encrypted client-side — only the recipient can read them.</li>
@@ -169,17 +168,15 @@ $description = "$keyword — Create and share self-destructing messages online w
         <li>⏱️ <strong>Timed Expiry:</strong> Set your message to expire in minutes, hours, or days.</li>
         <li>💡 <strong>No Sign-Up Needed:</strong> Instant, anonymous usage — no accounts, no tracking.</li>
       </ul>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="1753877472"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+     <div class="ad-slot">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-2885050972904135"
+       data-ad-slot="1753877472"></ins>
+</div>
+
       <h3>Use Cases</h3>
       <ul>
 
@@ -189,17 +186,15 @@ $description = "$keyword — Create and share self-destructing messages online w
         <li>💞 Personal messages you want to disappear after reading</li>
       </ul>
     </section>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="2995355698"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="ad-slot">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-2885050972904135"
+       data-ad-slot="1753877472"></ins>
+</div>
+
     <footer>
       <p>© <?php echo date('Y'); ?> <a href="<?php echo $domain; ?>">TempMessage.com</a> — Secure, fast, and anonymous online messaging.</p>
       <p><a href="<?php echo $domain; ?>privacy-policy">Privacy Policy</a> | <a href="<?php echo $domain; ?>terms">Terms of Use</a></p>
@@ -239,5 +234,36 @@ $description = "$keyword — Create and share self-destructing messages online w
     alert("Link copied to clipboard!");
   });
   </script>
+  <script>
+(function () {
+  let adLoaded = false;
+
+  function loadAd() {
+    if (adLoaded) return;
+    adLoaded = true;
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  // Trigger on real user intent
+  ["scroll", "mousemove", "touchstart", "keydown"].forEach(evt => {
+    window.addEventListener(evt, loadAd, { once: true });
+  });
+
+  // Trigger when ad becomes viewable
+  const adSlot = document.querySelector(".ad-slot");
+  if (adSlot) {
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        loadAd();
+        observer.disconnect();
+      }
+    }, { rootMargin: "200px" });
+
+    observer.observe(adSlot);
+  }
+})();
+</script>
+
 </body>
 </html>
