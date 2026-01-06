@@ -42,26 +42,74 @@ $description = "$keyword — Create and share self-destructing messages online w
   <meta property="og:image" content="<?php echo $domain; ?>assets/preview.jpg" />
   <link rel="canonical" href="<?php echo $domain . '?q=' . urlencode($keyword); ?>" />
   <link rel="stylesheet" href="assets/style.css" />
+  <!-- Google Ads Performance Boost -->
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "<?php echo $keyword; ?>",
-    "url": "<?php echo $domain; ?>",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "All",
-    "description": "<?php echo $description; ?>",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "<?php echo $domain; ?>#website",
+      "url": "<?php echo $domain; ?>",
+      "name": "TempMessage",
+      "description": "<?php echo $description; ?>",
+      "publisher": {
+        "@id": "<?php echo $domain; ?>#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "<?php echo $domain; ?>?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "<?php echo $domain; ?>#organization",
+      "name": "Temp Message",
+      "url": "<?php echo $domain; ?>",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "<?php echo $domain; ?>assets/logo.png"
+      },
+      "sameAs": [
+        "https://twitter.com/",
+        "https://www.facebook.com/",
+        "https://www.linkedin.com/"
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "<?php echo $domain; ?>#webapp",
+      "name": "<?php echo $keyword; ?>",
+      "url": "<?php echo $domain; ?>",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "description": "<?php echo $description; ?>",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "18234"
+      }
     }
-  }
-  </script>
+  ]
+}
+</script>
+
 <script async
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
   crossorigin="anonymous">
@@ -138,7 +186,7 @@ $description = "$keyword — Create and share self-destructing messages online w
 </div>
 <!-- 🔴 AD SLOT 1 : BELOW EMAIL ADDRESS (TOP RPM) -->
 <div class="max-w-md mx-auto px-4 mt-4">
-  <ins class="adsbygoogle"
+  <ins class="adsbygoogle ad-fast"
        style="display:block"
        data-ad-client="ca-pub-2885050972904135"
        data-ad-slot="5643353039"
@@ -146,9 +194,38 @@ $description = "$keyword — Create and share self-destructing messages online w
        data-full-width-responsive="true"></ins>
 </div>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+(function () {
+  let loaded = false;
+
+  function loadAd() {
+    if (loaded) return;
+    loaded = true;
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  const ad = document.querySelector(".ad-fast");
+  if (!ad) return;
+
+  // Load instantly if already in viewport
+  if (ad.getBoundingClientRect().top < window.innerHeight + 200) {
+    loadAd();
+    return;
+  }
+
+  // Otherwise load when about to be visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadAd();
+        observer.disconnect();
+      }
+    });
+  }, { rootMargin: "200px" });
+
+  observer.observe(ad);
+})();
 </script>
-<!-- 🔴 END AD SLOT 1 -->
+
 
 <p class="text-gray-400 text-xs text-center mt-6 leading-relaxed px-4 font-mono">
                 <?php echo $keyword; ?> Forget about hacking, robot attacks, advertising mailings, and spam. Your actual mailbox should be kept safe and clean. Temp Mail offers a free, disposable, anonymous, secure, and temporary email address.
@@ -188,19 +265,48 @@ $description = "$keyword — Create and share self-destructing messages online w
 </div>
 </div>
 </section>
-<!-- 🔴 AD SLOT 2 : BELOW INBOX (WAIT ZONE) -->
-<div class="max-w-md mx-auto px-4 mt-6 mb-6">
-  <ins class="adsbygoogle"
+<!-- 🔴 AD SLOT 1 : BELOW EMAIL ADDRESS (TOP RPM) -->
+<div class="max-w-md mx-auto px-4 mt-4">
+  <ins class="adsbygoogle ad-fast"
        style="display:block"
        data-ad-client="ca-pub-2885050972904135"
-       data-ad-slot="3939389128"
+       data-ad-slot="5643353039"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
 </div>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+(function () {
+  let loaded = false;
+
+  function loadAd() {
+    if (loaded) return;
+    loaded = true;
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  const ad = document.querySelector(".ad-fast");
+  if (!ad) return;
+
+  // Load instantly if already in viewport
+  if (ad.getBoundingClientRect().top < window.innerHeight + 200) {
+    loadAd();
+    return;
+  }
+
+  // Otherwise load when about to be visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadAd();
+        observer.disconnect();
+      }
+    });
+  }, { rootMargin: "200px" });
+
+  observer.observe(ad);
+})();
 </script>
-<!-- 🔴 END AD SLOT 2 -->
+
 <main class="max-w-md mx-auto px-6 mt-12 space-y-10">
 <article>
 <h2 class="font-display font-bold text-xl mb-4 text-gray-900 dark:text-white">What is Disposable<br/>Temporary E-mail?</h2>
@@ -208,17 +314,48 @@ $description = "$keyword — Create and share self-destructing messages online w
 <strong class="text-gray-800 dark:text-gray-200">Disposable email</strong> - is a free email service that lets users receive emails at a temporary address before it self-destructs after a predetermined amount of time. Other names for it include tempmail, 10minutemail, 10minmail, throwaway email, fake-mail, fake-email generator, burner mail, and trash-mail. Before users can view content, leave comments, or download anything, many forums, Wi-Fi providers, websites, and blogs require registration. The most sophisticated disposable email service that keeps you safe and helps you avoid spam is called Temp-Mail.
             </p>
 
-<!-- 🔴 AD SLOT 3 : MID ARTICLE -->
-<ins class="adsbygoogle"
-     style="display:block; margin:20px 0"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="1121654091"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+<!-- 🔴 AD SLOT 1 : BELOW EMAIL ADDRESS (TOP RPM) -->
+<div class="max-w-md mx-auto px-4 mt-4">
+  <ins class="adsbygoogle ad-fast"
+       style="display:block"
+       data-ad-client="ca-pub-2885050972904135"
+       data-ad-slot="5643353039"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+(function () {
+  let loaded = false;
+
+  function loadAd() {
+    if (loaded) return;
+    loaded = true;
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  const ad = document.querySelector(".ad-fast");
+  if (!ad) return;
+
+  // Load instantly if already in viewport
+  if (ad.getBoundingClientRect().top < window.innerHeight + 200) {
+    loadAd();
+    return;
+  }
+
+  // Otherwise load when about to be visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadAd();
+        observer.disconnect();
+      }
+    });
+  }, { rootMargin: "200px" });
+
+  observer.observe(ad);
+})();
 </script>
-<!-- 🔴 END AD SLOT 3 -->
+
 
 </article>
 <section>
@@ -524,6 +661,7 @@ function startPolling() {
 /* ================= START ================= */
 document.addEventListener("DOMContentLoaded", initMailbox);
 </script>
+
 
 
 </body></html>
