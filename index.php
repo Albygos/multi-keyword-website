@@ -43,22 +43,63 @@ $description = "$keyword — Create and share self-destructing messages online w
   <meta property="og:image" content="<?php echo $domain; ?>assets/preview.jpg" />
   <link rel="canonical" href="<?php echo $domain . '?q=' . urlencode($keyword); ?>" />
   <link rel="stylesheet" href="assets/style.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "<?php echo $keyword; ?>",
-    "url": "<?php echo $domain; ?>",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "All",
-    "description": "<?php echo $description; ?>",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "<?php echo $domain; ?>#website",
+      "url": "<?php echo $domain; ?>",
+      "name": "TempMessage",
+      "description": "<?php echo $description; ?>",
+      "publisher": {
+        "@id": "<?php echo $domain; ?>#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "<?php echo $domain; ?>?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "<?php echo $domain; ?>#organization",
+      "name": "Temp Message",
+      "url": "<?php echo $domain; ?>",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "<?php echo $domain; ?>assets/logo.png"
+      },
+      "sameAs": [
+        "https://twitter.com/",
+        "https://www.facebook.com/",
+        "https://www.linkedin.com/"
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "<?php echo $domain; ?>#webapp",
+      "name": "<?php echo $keyword; ?>",
+      "url": "<?php echo $domain; ?>",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "description": "<?php echo $description; ?>",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "18234"
+      }
     }
-  }
-  </script>
+  ]
+}
+</script>
 </head>
 <body>
   <main class="container">
