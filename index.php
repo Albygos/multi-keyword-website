@@ -128,8 +128,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
   ]
 }
 </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
+  
 
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white overflow-x-hidden antialiased flex flex-col min-h-screen"> <!-- Top Navigation -->
@@ -163,18 +162,22 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                         <div class="flex-1 flex flex-col gap-6 text-center lg:text-left">
                             <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-[#111418] dark:text-white"> <?php echo $keyword; ?> </h1>
                             <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"> Unbiased, independent comparison of top providers. No sign-up required to view our data. We prioritize your needs over commissions. </p>
-                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"> <a class="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#comparison"> Jump to Comparison </a> <a class="inline-flex h-12 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 px-6 text-base font-bold text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" href="#faq"> How We Rate </a> </div>
                         </div>
                         <div class="w-full lg:w-5/12 aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 relative group">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
-                            <div class="w-full h-full bg-cover bg-center" data-alt="A clean, modern car driving on a coastal American highway representing freedom and insurance safety" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTirlQE9BqWGaf8n2CJ-iwZ2zXwuIUYheOlWaDndMKlLO3T3ws2Ia1Lsu54hdD5kL3OiBIoKCJEKoyrY_asq_wPGthsn2bTh_v1Psh3tIifgANlkcHzB9HgKMM9FQyhWn4PBB0laXmwUDNniJuxrCiflOUqXho4ALUmPiqnZb6mmg98Iq9wK7miLm1CL8xGdEYwHaNX4q4KjEZMuC1ofjoRAiKhI1Dex9L-kvsCLh_m6HaYAYeTTSbZl8hv9Jr0i1pAE_wDpURRLP1");'></div>
                         </div>
                     </div>
                 </div>
             </section> <!-- Ad Slot (Leaderboard) -->
-            <div class="w-full bg-gray-50 dark:bg-[#151f2b] py-8 border-b border-gray-100 dark:border-gray-800 flex justify-center">
-                <div class="w-[728px] h-[90px] bg-gray-200 dark:bg-gray-800 rounded flex flex-col items-center justify-center text-gray-400 text-xs border border-dashed border-gray-300 dark:border-gray-700"> <span class="font-bold tracking-widest uppercase mb-1">Advertisement</span> <span>728 x 90 Leaderboard</span> </div>
-            </div> <!-- Intro Text -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="2260078580"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>            </div> <!-- Intro Text -->
             <section class="px-4 py-10 md:px-8 max-w-4xl mx-auto w-full">
                 <div class="prose prose-lg prose-slate dark:prose-invert max-w-none">
                     <h3 class="text-2xl font-bold text-[#111418] dark:text-white mb-4">Why compare independently?</h3>
@@ -209,7 +212,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                                             <div class="size-10 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xs">SF</div>
                                             <div>
                                                 <p class="font-bold text-[#111418] dark:text-white">State Farm</p>
-                                                <p class="text-xs text-green-600 font-medium">Top Pick 2024</p>
+                                                <p class="text-xs text-green-600 font-medium">Top Pick 2026</p>
                                             </div>
                                         </div>
                                     </td>
@@ -282,6 +285,16 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                             <h4 class="text-lg font-bold text-[#111418] dark:text-white mt-1">Florida</h4>
                             <p class="text-2xl font-black text-primary mt-2">$2,560<span class="text-sm font-normal text-gray-400">/yr</span></p>
                         </div>
+                      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="2260078580"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
                         <div class="bg-white dark:bg-gray-900 p-5 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
                             <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Least Expensive</p>
                             <h4 class="text-lg font-bold text-[#111418] dark:text-white mt-1">Vermont</h4>
@@ -311,6 +324,16 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                         <div class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow">
                             <div class="size-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center text-orange-600 dark:text-orange-400 mb-4"> <span class="material-symbols-outlined">car_crash</span> </div>
                             <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Collision</h3>
+                          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="2260078580"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
                             <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"> Covers repairs to <strong>your vehicle</strong> after an accident with another car or object (like a fence), regardless of fault. </p>
                         </div> <!-- Card 3 -->
                         <div class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow">
@@ -375,7 +398,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                         </div>
                     </div>
                     <div class="pt-8 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p class="text-xs text-gray-400 dark:text-gray-600 text-center md:text-left"> © 2024 US AutoInsure Guide. All rights reserved. <br class="md:hidden" /> This site is for educational purposes only. </p>
+                        <p class="text-xs text-gray-400 dark:text-gray-600 text-center md:text-left"> © 2026 USA car Insure Guide. All rights reserved. <br class="md:hidden" /> This site is for educational purposes only. </p>
                         <p class="text-[10px] text-gray-300 dark:text-gray-700 max-w-md text-center md:text-right"> Disclaimer: We are not an insurance broker or agent. The quotes and information provided are for informational purposes. </p>
                     </div>
                 </div>
