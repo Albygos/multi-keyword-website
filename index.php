@@ -34,9 +34,9 @@ $description = "$keyword — Learn about car insurance in the United States, inc
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title><?php echo $keyword; ?></title>
-  <meta name="description" content="<?php echo $description; ?>" />
-<meta name="keywords" content="car insurance united states, auto insurance united states, us car insurance cost, average car insurance rates usa, vehicle insurance coverage usa, full coverage auto insurance usa, liability car insurance usa, state minimum car insurance usa, car insurance laws united states, auto insurance guide usa">
+ <title><?php echo $keyword; ?> — Car Insurance Costs & Coverage Guide (USA)</title>
+
+<meta name="description" content="<?php echo $keyword; ?> explained for United States drivers. Learn about car insurance costs, coverage types, and pricing factors in the USA." />
   <meta property="og:title" content="<?php echo $keyword; ?>" />
   <meta property="og:description" content="<?php echo $description; ?>" />
   <meta property="og:url" content="<?php echo $domain; ?>" />
@@ -44,367 +44,448 @@ $description = "$keyword — Learn about car insurance in the United States, inc
   <meta property="og:image" content="<?php echo $domain; ?>assets/preview.jpg" />
   <link rel="canonical" href="<?php echo $domain . '?q=' . urlencode($keyword); ?>" />
   <link rel="stylesheet" href="assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" /> <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> <!-- Theme Configuration -->
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#2b8cee",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#101922",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#ffffff",
+              "background-dark": "#101622",
+              "surface-light": "#f8f9fa",
+              "surface-dark": "#1a2230",
             },
-        }
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
     </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        /* Hide scrollbar for horizontal scrolling areas but allow functionality */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+
    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "<?php echo $domain; ?>#website",
-      "url": "<?php echo $domain; ?>",
-      "name": "car insurance united states",
-      "description": "<?php echo $description; ?>",
-      "publisher": {
-        "@id": "<?php echo $domain; ?>#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "<?php echo $domain; ?>?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "<?php echo $domain; ?>#organization",
-      "name": "car insurance united states",
-      "url": "<?php echo $domain; ?>",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "<?php echo $domain; ?>assets/logo.png"
-      },
-      "sameAs": [
-        "https://twitter.com/",
-        "https://www.facebook.com/",
-        "https://www.linkedin.com/"
-      ]
-    },
-    {
-      "@type": "WebApplication",
-      "@id": "<?php echo $domain; ?>#webapp",
-      "name": "<?php echo $keyword; ?>",
-      "url": "<?php echo $domain; ?>",
-      "applicationCategory": "UtilityApplication",
-      "operatingSystem": "All",
-      "browserRequirements": "Requires JavaScript",
-      "description": "<?php echo $description; ?>",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "18234"
-      }
-    }
-  ]
+  "@type": "Article",
+  "headline": "<?php echo $keyword; ?> — Car Insurance Guide (USA)",
+  "description": "Educational article explaining car insurance costs, coverage options, and pricing factors for drivers in the United States.",
+  "author": {
+    "@type": "Organization",
+    "name": "car Insurance usa"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "InsuranceInsights"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<?php echo $domain; ?>"
+  }
 }
 </script>
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
+  crossorigin="anonymous"></script>
   
-
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white overflow-x-hidden antialiased flex flex-col min-h-screen"> <!-- Top Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
-        <div class="flex items-center justify-between px-4 lg:px-10 py-3 max-w-7xl mx-auto w-full">
-            <div class="flex items-center gap-4">
-                <div class="size-8 text-primary flex items-center justify-center bg-primary/10 rounded-lg"> <span class="material-symbols-outlined text-xl">verified_user</span> </div>
-                <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]" <?php echo $keyword; ?> Guide</h2>
-            </div>
-            <div class="hidden md:flex flex-1 justify-end gap-8">
-                <nav class="flex items-center gap-6 lg:gap-9"> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#comparison">Comparison</a> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#costs">Costs</a> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#coverage">Coverage</a> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#faq">FAQ</a> </nav>
-            </div> <!-- Mobile Menu Button --> <button class="md:hidden p-2 text-gray-600"> <span class="material-symbols-outlined">menu</span> </button>
-        </div>
-    </header>
-    <div class="flex flex-1 max-w-7xl mx-auto w-full"> <!-- Sidebar Navigation (Desktop) -->
-        <aside class="hidden lg:flex w-64 flex-col gap-6 sticky top-[65px] h-[calc(100vh-65px)] overflow-y-auto p-6 border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 z-10">
-            <div>
-                <h3 class="text-[#111418] dark:text-white text-xs font-bold uppercase tracking-wider mb-4 text-gray-500">Table of Contents</h3>
-                <nav class="flex flex-col gap-1"> <a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium text-sm transition-colors" href="#hero"> <span class="material-symbols-outlined text-[18px]">home</span> Start Here </a> <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium transition-colors" href="#comparison"> <span class="material-symbols-outlined text-[18px]">table_chart</span> Comparison Table </a> <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium transition-colors" href="#costs"> <span class="material-symbols-outlined text-[18px]">attach_money</span> Cost Analysis </a> <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium transition-colors" href="#coverage"> <span class="material-symbols-outlined text-[18px]">shield</span> Coverage Types </a> <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium transition-colors" href="#faq"> <span class="material-symbols-outlined text-[18px]">help</span> FAQ </a> </nav>
-            </div>
-            <div class="mt-auto bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700">
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Editorial Disclosure</p>
-                <p class="text-xs text-gray-400 dark:text-gray-500 leading-relaxed"> We are an independent publisher. We may earn a commission when you click on links, at no extra cost to you. Our opinions are our own. </p>
-            </div>
-        </aside> <!-- Main Content -->
-        <main class="flex-1 flex flex-col w-full min-w-0 bg-white dark:bg-background-dark"> <!-- Hero Section -->
-            <section class="px-4 py-8 md:px-8 lg:py-12 border-b border-gray-100 dark:border-gray-800" id="hero">
-                <div class="max-w-4xl mx-auto"> <!-- Trust Badge -->
-                    <div class="flex justify-center mb-6"> <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 text-green-700 border border-green-200 text-xs font-semibold tracking-wide uppercase"> <span class="material-symbols-outlined text-sm">check_circle</span> Updated for 2024 </span> </div>
-                    <div class="flex flex-col lg:flex-row gap-8 items-center">
-                        <div class="flex-1 flex flex-col gap-6 text-center lg:text-left">
-                            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-[#111418] dark:text-white"> <?php echo $keyword; ?> </h1>
-                            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"> Unbiased, independent comparison of top providers. No sign-up required to view our data. We prioritize your needs over commissions. </p>
-                        </div>
-                        <div class="w-full lg:w-5/12 aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 relative group">
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- Ad Slot (Leaderboard) -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
+<body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-gray-100 font-display transition-colors duration-200">
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-background-dark/95 backdrop-blur">
+<div class="flex items-center p-4 justify-between max-w-3xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-2xl">shield_person</span>
+</div>
+<h1 class="text-[#111318] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">car Insurance usa</h1>
+</div>
+<button class="p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col max-w-3xl mx-auto w-full group/design-root overflow-x-hidden">
+<!-- Hero Section -->
+<section class="flex flex-col px-4 pt-8 pb-4">
+<h1 class="text-[#111318] dark:text-white tracking-tight text-[32px] md:text-4xl font-bold leading-tight text-left mb-4">
+               <?php echo $keyword; ?>
+            </h1>
+<div class="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary p-4 rounded-r-lg mb-6">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">info</span>
+<p class="text-sm text-gray-700 dark:text-gray-300 font-medium">
+<strong>Independent Information Only:</strong> This site provides insurance information and comparisons for educational purposes. We are not an insurance provider. Prices are estimates and subject to change.
+                    </p>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                <?php echo $keyword; ?> Navigating the complex landscape of auto insurance in the United States requires understanding various factors that influence coverage options and premium costs. This guide aims to provide objective data to help consumers evaluate their choices.
+            </p>
+</section>
+<!-- Ad Placement 1 -->
+<ins class="adsbygoogle ad-slot ad-1"
      style="display:block"
-     data-ad-format="autorelaxed"
      data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="2260078580"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>            </div> <!-- Intro Text -->
-            <section class="px-4 py-10 md:px-8 max-w-4xl mx-auto w-full">
-                <div class="prose prose-lg prose-slate dark:prose-invert max-w-none">
-                    <h3 class="text-2xl font-bold text-[#111418] dark:text-white mb-4">Why compare independently?</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-6">  <?php echo $keyword; ?> Choosing the right auto insurance policy is more than just finding the lowest price. It's about ensuring your financial safety in the event of an accident. Our data is sourced from verified consumer reports, J.D. Power claims satisfaction studies, and AM Best financial strength ratings. </p>
-                    <p class="text-gray-600 dark:text-gray-300"> We analyze thousands of data points to bring you a clear, side-by-side comparison of the top national carriers. Whether you are looking for minimum liability or full coverage, this guide will help you navigate the complex US insurance market. </p>
-                </div>
-            </section> <!-- Comparison Table Section -->
-            <section class="px-4 py-10 md:px-8 bg-gray-50 dark:bg-[#131b24] border-y border-gray-200 dark:border-gray-800" id="comparison">
-                <div class="max-w-4xl mx-auto w-full">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
-                        <div>
-                            <h2 class="text-2xl font-bold text-[#111418] dark:text-white">Top 5 Insurers Comparison</h2>
-                            <p class="text-sm text-gray-500 mt-1">Based on J.D. Power 2023 Study &amp; National Average Premiums</p>
-                        </div>
-                        <div class="flex gap-2"> <button class="px-3 py-1.5 text-sm font-medium bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700">Filter</button> <button class="px-3 py-1.5 text-sm font-medium bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700">Sort</button> </div>
-                    </div>
-                    <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm bg-white dark:bg-gray-900">
-                        <table class="w-full text-left border-collapse">
-                            <thead>
-                                <tr class="bg-gray-100 dark:bg-gray-800 text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-semibold">
-                                    <th class="p-4 min-w-[150px]">Company</th>
-                                    <th class="p-4 text-center">J.D. Power Rating</th>
-                                    <th class="p-4 text-center">Avg. Annual Cost</th>
-                                    <th class="p-4">Best For</th>
-                                    <th class="p-4 text-right">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-100 dark:divide-gray-800"> <!-- Row 1 -->
-                                <tr class="group hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-colors">
-                                    <td class="p-4">
-                                        <div class="flex items-center gap-3">
-                                            <div class="size-10 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xs">SF</div>
-                                            <div>
-                                                <p class="font-bold text-[#111418] dark:text-white">State Farm</p>
-                                                <p class="text-xs text-green-600 font-medium">Top Pick 2026</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="p-4 text-center">
-                                        <div class="inline-flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded"> <span class="text-sm font-bold">877</span> <span class="text-[10px] text-gray-500">/1000</span> </div>
-                                    </td>
-                                    <td class="p-4 text-center"> <span class="font-medium text-[#111418] dark:text-white">$1,480</span> </td>
-                                    <td class="p-4 text-sm text-gray-600 dark:text-gray-300">Customer Service &amp; Local Agents</td>
-                                    <td class="p-4 text-right"> <button class="px-4 py-2 bg-primary text-white text-sm font-bold rounded-lg hover:bg-primary/90 transition-colors">View Details</button> </td>
-                                </tr> <!-- Row 2 -->
-                                <tr class="group hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-colors">
-                                    <td class="p-4">
-                                        <div class="flex items-center gap-3">
-                                            <div class="size-10 bg-[#164585] text-white rounded-lg flex items-center justify-center font-bold text-xs">G</div>
-                                            <div>
-                                                <p class="font-bold text-[#111418] dark:text-white">Geico</p>
-                                                <p class="text-xs text-gray-500">Berkshire Hathaway</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="p-4 text-center">
-                                        <div class="inline-flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded"> <span class="text-sm font-bold">853</span> <span class="text-[10px] text-gray-500">/1000</span> </div>
-                                    </td>
-                                    <td class="p-4 text-center"> <span class="font-medium text-[#111418] dark:text-white">$1,350</span> </td>
-                                    <td class="p-4 text-sm text-gray-600 dark:text-gray-300">Budget Conscious Drivers</td>
-                                    <td class="p-4 text-right"> <button class="px-4 py-2 bg-primary/10 text-primary border border-primary/20 text-sm font-bold rounded-lg hover:bg-primary/20 transition-colors">View Details</button> </td>
-                                </tr> <!-- Row 3 -->
-                                <tr class="group hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-colors">
-                                    <td class="p-4">
-                                        <div class="flex items-center gap-3">
-                                            <div class="size-10 bg-[#00A8E0] text-white rounded-lg flex items-center justify-center font-bold text-xs">P</div>
-                                            <div>
-                                                <p class="font-bold text-[#111418] dark:text-white">Progressive</p>
-                                                <p class="text-xs text-gray-500">Snapshot®</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="p-4 text-center">
-                                        <div class="inline-flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded"> <span class="text-sm font-bold">814</span> <span class="text-[10px] text-gray-500">/1000</span> </div>
-                                    </td>
-                                    <td class="p-4 text-center"> <span class="font-medium text-[#111418] dark:text-white">$1,610</span> </td>
-                                    <td class="p-4 text-sm text-gray-600 dark:text-gray-300">High-Risk Drivers</td>
-                                    <td class="p-4 text-right"> <button class="px-4 py-2 bg-primary/10 text-primary border border-primary/20 text-sm font-bold rounded-lg hover:bg-primary/20 transition-colors">View Details</button> </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </section> <!-- Cost Analysis Section -->
-            <section class="px-4 py-12 md:px-8 max-w-4xl mx-auto w-full" id="costs">
-                <div class="mb-8">
-                    <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-2">Average Cost by State</h2>
-                    <p class="text-gray-600 dark:text-gray-300"> Insurance premiums vary significantly by location due to state regulations, weather patterns, and accident rates. </p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start"> <!-- Map Graphic Placeholder -->
-                    <div class="bg-blue-50 dark:bg-[#1a2634] rounded-2xl p-6 flex items-center justify-center aspect-video relative overflow-hidden"> <!-- Abstract US Map Representation -->
-                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400 to-transparent"></div> <span class="material-symbols-outlined text-[120px] text-primary/30">public</span>
-                        <div class="absolute bottom-4 right-4 bg-white dark:bg-gray-800 p-3 rounded-lg shadow-sm text-xs">
-                            <div class="flex items-center gap-2 mb-1">
-                                <div class="size-2 rounded-full bg-red-400"></div> High Cost &gt; $2k
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="size-2 rounded-full bg-green-400"></div> Low Cost &lt; $1k
-                            </div>
-                        </div>
-                    </div> <!-- Cost Stats Cards -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="bg-white dark:bg-gray-900 p-5 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
-                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Most Expensive</p>
-                            <h4 class="text-lg font-bold text-[#111418] dark:text-white mt-1">Florida</h4>
-                            <p class="text-2xl font-black text-primary mt-2">$2,560<span class="text-sm font-normal text-gray-400">/yr</span></p>
-                        </div>
-                      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="2260078580"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                        <div class="bg-white dark:bg-gray-900 p-5 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
-                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Least Expensive</p>
-                            <h4 class="text-lg font-bold text-[#111418] dark:text-white mt-1">Vermont</h4>
-                            <p class="text-2xl font-black text-green-600 mt-2">$995<span class="text-sm font-normal text-gray-400">/yr</span></p>
-                        </div>
-                        <div class="bg-white dark:bg-gray-900 p-5 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm col-span-1 sm:col-span-2">
-                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">National Average</p>
-                            <div class="flex items-end gap-3 mt-1">
-                                <h4 class="text-3xl font-black text-[#111418] dark:text-white">$1,780</h4> <span class="text-sm text-red-500 font-medium mb-1.5 flex items-center"> <span class="material-symbols-outlined text-sm">trending_up</span> +12% from 2023 </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- In-Article Ad Slot -->
-            <div class="w-full py-8 flex justify-center bg-white dark:bg-background-dark">
-                <div class="w-[300px] h-[250px] md:w-[728px] md:h-[90px] bg-gray-50 dark:bg-gray-900 rounded flex flex-col items-center justify-center text-gray-400 text-xs border border-dashed border-gray-200 dark:border-gray-800"> <span class="font-bold tracking-widest uppercase mb-1">Advertisement</span> <span class="md:hidden">300 x 250 Medium Rectangle</span> <span class="hidden md:inline">728 x 90 Leaderboard</span> </div>
-            </div> <!-- Coverage Types -->
-            <section class="px-4 py-12 md:px-8 bg-gray-50 dark:bg-[#131b24] border-y border-gray-200 dark:border-gray-800" id="coverage">
-                <div class="max-w-4xl mx-auto w-full">
-                    <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-6">Coverage Types Explained</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> <!-- Card 1 -->
-                        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow">
-                            <div class="size-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400 mb-4"> <span class="material-symbols-outlined">gavel</span> </div>
-                            <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Liability</h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"> <?php echo $keyword; ?>  Mandatory in most states. Covers bodily injury and property damage to <strong>others</strong> if you are at fault in an accident. </p>
-                        </div> <!-- Card 2 -->
-                        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow">
-                            <div class="size-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center text-orange-600 dark:text-orange-400 mb-4"> <span class="material-symbols-outlined">car_crash</span> </div>
-                            <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Collision</h3>
-                          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="2260078580"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"> Covers repairs to <strong>your vehicle</strong> after an accident with another car or object (like a fence), regardless of fault. </p>
-                        </div> <!-- Card 3 -->
-                        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow">
-                            <div class="size-12 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center text-purple-600 dark:text-purple-400 mb-4"> <span class="material-symbols-outlined">thunderstorm</span> </div>
-                            <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Comprehensive</h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"> Protection against non-collision events: theft, vandalism, fire, falling objects, and severe weather damage. </p>
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- FAQ Section -->
-            <section class="px-4 py-12 md:px-8 max-w-4xl mx-auto w-full" id="faq">
-                <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-8 text-center">Frequently Asked Questions</h2>
-                <div class="flex flex-col gap-4">
-                    <details class="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
-                        <summary class="flex cursor-pointer items-center justify-between p-5 font-medium text-[#111418] dark:text-white"> <span>How can I lower my car insurance rates?</span> <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span> </summary>
-                        <div class="px-5 pb-5 pt-0 text-gray-600 dark:text-gray-400 text-sm leading-relaxed"> You can lower your rates by bundling policies (home + auto), maintaining a clean driving record, improving your credit score, and increasing your deductible. Many insurers also offer discounts for defensive driving courses. </div>
-                    </details>
-                    <details class="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
-                        <summary class="flex cursor-pointer items-center justify-between p-5 font-medium text-[#111418] dark:text-white"> <span>Is full coverage worth it for an old car?</span> <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span> </summary>
-                        <div class="px-5 pb-5 pt-0 text-gray-600 dark:text-gray-400 text-sm leading-relaxed"> A general rule of thumb is that if your annual premium for full coverage exceeds 10% of your car's cash value, it might be time to drop collision and comprehensive coverage. </div>
-                    </details>
-                    <details class="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
-                        <summary class="flex cursor-pointer items-center justify-between p-5 font-medium text-[#111418] dark:text-white"> <span>Does credit score affect car insurance?</span> <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span> </summary>
-                        <div class="px-5 pb-5 pt-0 text-gray-600 dark:text-gray-400 text-sm leading-relaxed"> Yes, in most states (except California, Hawaii, Massachusetts, and Michigan), insurers use a credit-based insurance score to help determine your premium. Higher scores generally lead to lower rates. </div>
-                    </details>
-                </div>
-            </section> <!-- Final CTA Area -->
-            <section class="bg-primary/5 dark:bg-primary/10 py-16 px-4 text-center border-t border-primary/10">
-                <div class="max-w-2xl mx-auto">
-                    <h2 class="text-3xl font-black text-[#111418] dark:text-white mb-4">Ready to find your policy?</h2>
-                    <p class="text-gray-600 dark:text-gray-300 mb-8">Compare quotes from over 20 providers in under 5 minutes. No hidden fees.</p> <button class="bg-primary text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all hover:scale-[1.02]"> Start Independent Comparison </button>
-                    <p class="text-xs text-gray-400 mt-4">Free service. No obligation.</p>
-                </div>
-            </section> <!-- Footer -->
-            <footer class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 px-8">
-                <div class="max-w-7xl mx-auto">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                        <div class="col-span-1 md:col-span-2">
-                            <div class="flex items-center gap-2 mb-4">
-                                <div class="size-6 text-primary flex items-center justify-center bg-primary/10 rounded"> <span class="material-symbols-outlined text-sm">verified_user</span> </div>
-                                <h2 class="text-[#111418] dark:text-white font-bold">US AutoInsure Guide</h2>
-                            </div>
-                            <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed max-w-sm"> Your trusted, independent resource for navigating the US insurance market. Our mission is to provide transparent, data-driven insurance education for every American driver. </p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-[#111418] dark:text-white mb-4">Navigation</h4>
-                            <ul class="flex flex-col gap-2 text-sm text-gray-500 dark:text-gray-400">
-                                <li><a class="hover:text-primary transition-colors" href="#">Comparison</a></li>
-                                <li><a class="hover:text-primary transition-colors" href="#">Cost Analysis</a></li>
-                                <li><a class="hover:text-primary transition-colors" href="#">Coverage Guide</a></li>
-                                <li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-[#111418] dark:text-white mb-4">Legal</h4>
-                            <ul class="flex flex-col gap-2 text-sm text-gray-500 dark:text-gray-400">
-                                <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-                                <li><a class="hover:text-primary transition-colors" href="#">Terms of Use</a></li>
-                                <li><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
-                                <li><a class="hover:text-primary transition-colors" href="#">Accessibility</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pt-8 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p class="text-xs text-gray-400 dark:text-gray-600 text-center md:text-left"> © 2026 USA car Insure Guide. All rights reserved. <br class="md:hidden" /> This site is for educational purposes only. </p>
-                        <p class="text-[10px] text-gray-300 dark:text-gray-700 max-w-md text-center md:text-right"> Disclaimer: We are not an insurance broker or agent. The quotes and information provided are for informational purposes. </p>
-                    </div>
-                </div>
-            </footer>
-        </main>
-    </div>
-</body>
+     data-ad-slot="8391384423"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 
-</html>
+<!-- Introduction Content -->
+<section class="px-4 py-6 space-y-6 text-gray-800 dark:text-gray-200 leading-relaxed text-base">
+<h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-2">Understanding US Car Insurance Market Dynamics</h2>
+<p>
+               <?php echo $keyword; ?> Car insurance in the United States is regulated at the state level, creating a fragmented market where requirements and costs vary significantly across borders. Unlike many other financial products, auto insurance premiums are highly personalized, relying on actuary tables that assess risk based on thousands of variables. When evaluating the "best" insurance, consumers typically look at a balance of financial strength, claims satisfaction ratings, and premium affordability.
+            </p>
+<p>
+                The primary factors affecting insurance costs include the driver's age, driving history, vehicle make and model, and geographic location. In most states, credit history also plays a pivotal role in determining rates, known as an "insurance score." Insurers use this data to predict the likelihood of a claim. It is crucial for consumers to understand that a "full coverage" policy is not a specific technical term but generally refers to a combination of Liability, Collision, and Comprehensive coverages.
+            </p>
+<p>
+                Furthermore, the rise of usage-based insurance (telematics) has introduced a new dynamic to pricing.<?php echo $keyword; ?>  Drivers willing to track their driving habits through mobile apps or plug-in devices may see rates based on actual behavior—such as braking intensity and time of day driven—rather than demographic proxies. This educational guide explores these nuances to assist in making informed decisions.
+            </p>
+</section>
+<!-- Comparison Table -->
+<section class="py-8 bg-surface-light dark:bg-surface-dark border-y border-gray-100 dark:border-gray-800">
+<div class="px-4 mb-6">
+<h2 class="text-2xl font-bold text-[#111318] dark:text-white">Provider Type Comparison</h2>
+<p class="text-sm text-gray-500 mt-2">Swipe horizontally to view full details. Estimates are national averages for educational comparison.</p>
+</div>
+<div class="w-full overflow-x-auto hide-scrollbar pl-4 pb-4">
+<table class="w-full min-w-[600px] border-collapse text-left text-sm">
+<thead>
+<tr class="border-b border-gray-200 dark:border-gray-700">
+<th class="py-3 pr-4 font-bold text-gray-900 dark:text-white sticky left-0 bg-surface-light dark:bg-surface-dark z-10 w-[140px]">Provider Type</th>
+<th class="py-3 px-4 font-semibold text-gray-600 dark:text-gray-400">Est. Monthly Cost*</th>
+<th class="py-3 px-4 font-semibold text-gray-600 dark:text-gray-400">Primary Coverage Focus</th>
+<th class="py-3 px-4 font-semibold text-gray-600 dark:text-gray-400">Best For Profile</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+<tr>
+<td class="py-4 pr-4 font-medium text-primary sticky left-0 bg-surface-light dark:bg-surface-dark z-10">Large National Carriers</td>
+<td class="py-4 px-4 text-gray-800 dark:text-gray-200">$90 - $160</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">Broad range (bundling options)</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">Homeowners, multi-car families</td>
+</tr>
+<tr>
+<td class="py-4 pr-4 font-medium text-primary sticky left-0 bg-surface-light dark:bg-surface-dark z-10">Regional / Mutuals</td>
+<td class="py-4 px-4 text-gray-800 dark:text-gray-200">$70 - $130</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">Localized customer service</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">Drivers with clean records</td>
+</tr>
+<tr>
+<td class="py-4 pr-4 font-medium text-primary sticky left-0 bg-surface-light dark:bg-surface-dark z-10">High-Risk Specialists</td>
+<td class="py-4 px-4 text-gray-800 dark:text-gray-200">$180 - $300+</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">State Minimum Liability</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">DUI history, multiple accidents</td>
+</tr>
+<tr>
+<td class="py-4 pr-4 font-medium text-primary sticky left-0 bg-surface-light dark:bg-surface-dark z-10">Usage-Based (Telematics)</td>
+<td class="py-4 px-4 text-gray-800 dark:text-gray-200">$50 - $120</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">Pay-per-mile / Behavior</td>
+<td class="py-4 px-4 text-gray-600 dark:text-gray-400">Low mileage, safe drivers</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="px-4 text-xs text-gray-400 italic mt-2">*Cost estimates vary by individual risk profile.</p>
+</section>
+<!-- Ad Placement 2 -->
+<ins class="adsbygoogle ad-slot ad-2"
+     style="display:block"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="5397377818"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<!-- Cost by State Section -->
+<section class="px-4 py-6">
+<h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-6">Regional Cost Analysis</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- State Card -->
+<div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-bold text-lg dark:text-gray-100">California</h3>
+<span class="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded">High Regulation</span>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Premiums are influenced by density and repair costs. Credit score cannot be used for rating.</p>
+<div class="text-sm font-medium text-gray-900 dark:text-white">Avg. Estimate: <span class="text-primary">$2,290 / year</span></div>
+</div>
+<!-- State Card -->
+<div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-bold text-lg dark:text-gray-100">Texas</h3>
+<span class="text-xs font-semibold bg-orange-100 text-orange-800 px-2 py-1 rounded">Weather Risk</span>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Hail and flood risks contribute to higher comprehensive coverage costs.</p>
+<div class="text-sm font-medium text-gray-900 dark:text-white">Avg. Estimate: <span class="text-primary">$1,850 / year</span></div>
+</div>
+<!-- State Card -->
+<div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-bold text-lg dark:text-gray-100">Florida</h3>
+<span class="text-xs font-semibold bg-red-100 text-red-800 px-2 py-1 rounded">No-Fault</span>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Required PIP coverage and high litigation rates drive costs up significantly.</p>
+<div class="text-sm font-medium text-gray-900 dark:text-white">Avg. Estimate: <span class="text-primary">$2,900 / year</span></div>
+</div>
+<!-- State Card -->
+<div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-bold text-lg dark:text-gray-100">New York</h3>
+<span class="text-xs font-semibold bg-purple-100 text-purple-800 px-2 py-1 rounded">Urban Density</span>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-2">High cost of living and medical care in metro areas impacts PIP and liability rates.</p>
+<div class="text-sm font-medium text-gray-900 dark:text-white">Avg. Estimate: <span class="text-primary">$2,500 / year</span></div>
+</div>
+</div>
+</section>
+<!-- Coverage Types Explained -->
+<section class="px-4 py-8 bg-surface-light dark:bg-surface-dark">
+<h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-6">Coverage Types Explained</h2>
+<div class="grid grid-cols-1 gap-6">
+<article class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg">
+<span class="material-symbols-outlined text-primary dark:text-blue-300">gavel</span>
+</div>
+<h3 class="text-lg font-bold dark:text-white">Liability Coverage</h3>
+</div>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                        This is mandatory in almost all states. It covers bodily injury and property damage that you cause to <em>others</em> in an accident. It does not pay for damage to your own vehicle or your own injuries. Limits are usually expressed as three numbers (e.g., 25/50/25), representing thousands of dollars for per-person injury, total incident injury, and property damage respectively.
+                    </p>
+</article>
+<article class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-green-100 dark:bg-green-900 rounded-lg">
+<span class="material-symbols-outlined text-green-600 dark:text-green-300">car_crash</span>
+</div>
+<h3 class="text-lg font-bold dark:text-white">Collision Coverage</h3>
+</div>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                        Collision pays for repairs to your vehicle if you hit another car or object (like a fence or tree), or if your car rolls over. <?php echo $keyword; ?> This coverage is typically required by lenders if you have a loan or lease on your vehicle. It is subject to a deductible, which is the amount you pay out-of-pocket before insurance kicks in.
+                    </p>
+</article>
+<article class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg">
+<span class="material-symbols-outlined text-purple-600 dark:text-purple-300">thunderstorm</span>
+</div>
+<h3 class="text-lg font-bold dark:text-white">Comprehensive Coverage</h3>
+</div>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                        Often called "other-than-collision," this covers damage caused by events outside your control, such as theft, vandalism, fire, weather (hail, floods), and hitting animals (like deer). Like collision, it usually has a deductible. It is generally sold alongside collision coverage.
+                    </p>
+</article>
+<article class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-orange-100 dark:bg-orange-900 rounded-lg">
+<span class="material-symbols-outlined text-orange-600 dark:text-orange-300">person_off</span>
+</div>
+<h3 class="text-lg font-bold dark:text-white">Uninsured/Underinsured Motorist</h3>
+</div>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                        This coverage protects you if you are hit by a driver who does not have insurance or does not have enough insurance to cover your medical bills or property damage. Given the estimated number of uninsured drivers on US roads (approx. 12%), this is often recommended even if not legally required in your state.
+                    </p>
+</article>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="px-4 py-8">
+<h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-6">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>Is car insurance mandatory in the USA?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Yes, almost every state requires drivers to carry a minimum amount of liability insurance. New Hampshire and Virginia are notable exceptions, though they have specific financial responsibility requirements or fees that must be paid in lieu of insurance. Driving without insurance can lead to fines, license suspension, and legal penalties.
+                    </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>How can I lower my insurance premium?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Common ways to reduce premiums include bundling home and auto policies, maintaining a clean driving record, increasing your deductible (which increases out-of-pocket risk), improving your credit score, and asking for discounts (e.g., safe driver, good student, military).
+                    </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>What is a deductible?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        A deductible is the amount of money you agree to pay upfront for repairs before your insurance company covers the rest. For example, if you have a $500 deductible and $2,000 in damages, you pay $500 and the insurer pays $1,500.
+                    </div>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>Does my credit score affect my insurance rate?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        In most states, yes. Insurers use a "credit-based insurance score" to predict risk. Studies have shown a correlation between lower credit scores and higher claim filing rates. However, states like California, Hawaii, Massachusetts, and Michigan restrict or ban the use of credit scores for setting auto insurance rates.
+                    </div>
+</details>
+<!-- FAQ Item 5 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>Is usage-based insurance worth it?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        If you are a safe driver who avoids late-night driving and hard braking, usage-based programs (telematics) can offer significant savings. However, some programs may increase rates for risky driving behavior, so it is important to read the terms carefully.
+                    </div>
+</details>
+<!-- Ad Placement 3 (Mid-FAQ) -->
+<ins class="adsbygoogle ad-slot ad-2"
+      style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="2971876096"></ins>
+
+<!-- FAQ Item 6 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>What is Gap Insurance?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Guaranteed Asset Protection (Gap) insurance covers the difference between what your car is currently worth (its depreciated value) and the amount you still owe on your loan or lease if your car is totaled.
+                    </div>
+</details>
+<!-- FAQ Item 7 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>What is an SR-22?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        An SR-22 is not insurance but a certificate of financial responsibility that your insurer files with the state. It is often required for high-risk drivers to reinstate a suspended license after a DUI or driving without insurance.
+                    </div>
+</details>
+<!-- FAQ Item 8 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>Does insurance cover rental cars?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Typically, your personal auto insurance policy extends to rental cars used for personal purposes within the US. However, it may not cover "loss of use" fees charged by rental agencies. Always verify with your provider before declining the rental agency's coverage.
+                    </div>
+</details>
+<!-- FAQ Item 9 -->
+<details class="group bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-semibold list-none text-gray-900 dark:text-white">
+<span>Is it hard to switch insurance providers?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        No, switching is generally easy. You can switch at any time, not just at renewal. Most insurers will prorate your refund for any unused premium. Just ensure your new policy is active before cancelling the old one to avoid a lapse in coverage.
+                    </div>
+</details>
+</div>
+</section>
+<!-- Disclaimer Section -->
+<section class="px-4 py-8 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+<h3 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Disclaimer</h3>
+<p class="text-xs text-gray-500 leading-normal mb-4">
+                car Insurance usa is an independent publisher of insurance information and does not offer insurance policies or advice. We do not guarantee the accuracy of any rates or estimates provided, as actual premiums depend on individual factors such as driving history, location, and vehicle type. We are not affiliated with any government entity or specific insurance provider. All product names, logos, and brands are property of their respective owners.
+            </p>
+<p class="text-xs text-gray-500 leading-normal">
+               <?php echo $keyword; ?>  By using this site, you acknowledge that the information provided is for educational purposes only and should not be construed as professional financial or legal advice. Please consult with a licensed insurance agent for specific coverage needs.
+            </p>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 pt-8 pb-12 px-4">
+<!-- Ad Placement 4 -->
+<ins class="adsbygoogle ad-slot ad-4"
+    style="display:block"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="7625097662"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins> 
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="text-gray-400 flex size-6 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-xl">shield_person</span>
+</div>
+<span class="text-gray-500 font-bold text-sm">car Insurance usa</span>
+</div>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-500">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Use</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="hover:text-primary transition-colors" href="#">Do Not Sell My Info (CCPA)</a>
+</div>
+</div>
+<div class="text-center mt-8 text-xs text-gray-400">
+                © 2026 car Insurance usa. All rights reserved.
+            </div>
+</footer>
+</main>
+  <script>
+(function () {
+  const slots = document.querySelectorAll(".ad-slot");
+  const loaded = new WeakSet();
+
+  function loadAd(slot) {
+    if (loaded.has(slot)) return;
+    loaded.add(slot);
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  /* 1️⃣ Require REAL user intent */
+  const intentEvents = ["scroll", "mousemove", "touchstart", "keydown"];
+  let intentDetected = false;
+
+  intentEvents.forEach(evt => {
+    window.addEventListener(evt, () => {
+      intentDetected = true;
+    }, { once: true });
+  });
+
+  /* 2️⃣ Load ads only when viewable + intent */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && intentDetected) {
+        loadAd(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    rootMargin: "250px"
+  });
+
+  slots.forEach(slot => observer.observe(slot));
+})();
+</script>
+
+</body></html>  
+
+  
