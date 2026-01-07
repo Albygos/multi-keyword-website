@@ -19,24 +19,25 @@ if (isset($_GET['q']) && trim($_GET['q']) !== '') {
     srand(crc32($daySeed));
     $keyword = $keywordsList[array_rand($keywordsList)];
 } else {
-    $keyword = 'Temporary Message Creator';
+    $keyword = 'car insurance united states';
 }
 
 // --- Sanitize output ---
 $keyword = htmlspecialchars($keyword, ENT_QUOTES, 'UTF-8');
 
 // --- Dynamic description ---
-$description = "$keyword — Create and share self-destructing messages online with TempMessage.com. End-to-end encryption ensures total privacy — no data stored, no accounts needed.";
+$description = "$keyword — Learn about car insurance in the United States, including average costs, coverage types, and how auto insurance works for US drivers.";
+
 ?>
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title><?php echo $keyword; ?> — Send Self-Destructing Private Messages Online</title>
+  <title><?php echo $keyword; ?></title>
   <meta name="description" content="<?php echo $description; ?>" />
-  <meta name="keywords" content="temporary message, secret message, encrypted message, self-destructing message, anonymous message, private message, one-time link, secure message sharing, tempmessage, private note, burn after reading" />
-  <meta property="og:title" content="<?php echo $keyword; ?> — Secure & Private Messaging" />
+<meta name="keywords" content="car insurance united states, auto insurance united states, us car insurance cost, average car insurance rates usa, vehicle insurance coverage usa, full coverage auto insurance usa, liability car insurance usa, state minimum car insurance usa, car insurance laws united states, auto insurance guide usa">
+  <meta property="og:title" content="<?php echo $keyword; ?>" />
   <meta property="og:description" content="<?php echo $description; ?>" />
   <meta property="og:url" content="<?php echo $domain; ?>" />
   <meta property="og:type" content="website" />
@@ -78,7 +79,7 @@ $description = "$keyword — Create and share self-destructing messages online w
       "@type": "WebSite",
       "@id": "<?php echo $domain; ?>#website",
       "url": "<?php echo $domain; ?>",
-      "name": "TempMessage",
+      "name": "car insurance united states",
       "description": "<?php echo $description; ?>",
       "publisher": {
         "@id": "<?php echo $domain; ?>#organization"
@@ -92,7 +93,7 @@ $description = "$keyword — Create and share self-destructing messages online w
     {
       "@type": "Organization",
       "@id": "<?php echo $domain; ?>#organization",
-      "name": "Temp Message",
+      "name": "car insurance united states",
       "url": "<?php echo $domain; ?>",
       "logo": {
         "@type": "ImageObject",
@@ -136,7 +137,7 @@ $description = "$keyword — Create and share self-destructing messages online w
         <div class="flex items-center justify-between px-4 lg:px-10 py-3 max-w-7xl mx-auto w-full">
             <div class="flex items-center gap-4">
                 <div class="size-8 text-primary flex items-center justify-center bg-primary/10 rounded-lg"> <span class="material-symbols-outlined text-xl">verified_user</span> </div>
-                <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">US AutoInsure Guide</h2>
+                <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]" <?php echo $keyword; ?> Guide</h2>
             </div>
             <div class="hidden md:flex flex-1 justify-end gap-8">
                 <nav class="flex items-center gap-6 lg:gap-9"> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#comparison">Comparison</a> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#costs">Costs</a> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#coverage">Coverage</a> <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#faq">FAQ</a> </nav>
@@ -160,7 +161,7 @@ $description = "$keyword — Create and share self-destructing messages online w
                     <div class="flex justify-center mb-6"> <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 text-green-700 border border-green-200 text-xs font-semibold tracking-wide uppercase"> <span class="material-symbols-outlined text-sm">check_circle</span> Updated for 2024 </span> </div>
                     <div class="flex flex-col lg:flex-row gap-8 items-center">
                         <div class="flex-1 flex flex-col gap-6 text-center lg:text-left">
-                            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-[#111418] dark:text-white"> Find the Best Car Insurance in the USA </h1>
+                            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-[#111418] dark:text-white"> <?php echo $keyword; ?> </h1>
                             <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"> Unbiased, independent comparison of top providers. No sign-up required to view our data. We prioritize your needs over commissions. </p>
                             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"> <a class="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#comparison"> Jump to Comparison </a> <a class="inline-flex h-12 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 px-6 text-base font-bold text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" href="#faq"> How We Rate </a> </div>
                         </div>
@@ -177,7 +178,7 @@ $description = "$keyword — Create and share self-destructing messages online w
             <section class="px-4 py-10 md:px-8 max-w-4xl mx-auto w-full">
                 <div class="prose prose-lg prose-slate dark:prose-invert max-w-none">
                     <h3 class="text-2xl font-bold text-[#111418] dark:text-white mb-4">Why compare independently?</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-6"> Choosing the right auto insurance policy is more than just finding the lowest price. It's about ensuring your financial safety in the event of an accident. Our data is sourced from verified consumer reports, J.D. Power claims satisfaction studies, and AM Best financial strength ratings. </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">  <?php echo $keyword; ?> Choosing the right auto insurance policy is more than just finding the lowest price. It's about ensuring your financial safety in the event of an accident. Our data is sourced from verified consumer reports, J.D. Power claims satisfaction studies, and AM Best financial strength ratings. </p>
                     <p class="text-gray-600 dark:text-gray-300"> We analyze thousands of data points to bring you a clear, side-by-side comparison of the top national carriers. Whether you are looking for minimum liability or full coverage, this guide will help you navigate the complex US insurance market. </p>
                 </div>
             </section> <!-- Comparison Table Section -->
@@ -305,7 +306,7 @@ $description = "$keyword — Create and share self-destructing messages online w
                         <div class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow">
                             <div class="size-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400 mb-4"> <span class="material-symbols-outlined">gavel</span> </div>
                             <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Liability</h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"> Mandatory in most states. Covers bodily injury and property damage to <strong>others</strong> if you are at fault in an accident. </p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"> <?php echo $keyword; ?>  Mandatory in most states. Covers bodily injury and property damage to <strong>others</strong> if you are at fault in an accident. </p>
                         </div> <!-- Card 2 -->
                         <div class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow">
                             <div class="size-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center text-orange-600 dark:text-orange-400 mb-4"> <span class="material-symbols-outlined">car_crash</span> </div>
