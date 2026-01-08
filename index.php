@@ -68,6 +68,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
         },
       }
     </script>
+  
 <style>
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         /* Smooth scrolling */
@@ -102,6 +103,15 @@ $description = "$keyword — Learn about car insurance in the United States, inc
     "@id": "<?php echo $domain; ?>"
   }
 }
+</script>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23335213785/atf_responsive_display', [[336, 280], [300, 250], [728, 90], [300, 600], [970, 250]], 'div-gpt-ad-1767888273985-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
 </script>
 <script async
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
@@ -141,15 +151,12 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                 <?php echo $keyword; ?> Navigating the complex landscape of auto insurance in the United States requires understanding various factors that influence coverage options and premium costs. This guide aims to provide objective data to help consumers evaluate their choices.
             </p>
 </section>
-<!-- Ad Placement 1 -->
-<ins class="adsbygoogle ad-slot ad-1"
-     style="display:block"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="8391384423"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
-<!-- Introduction Content -->
+<!-- /23335213785/atf_responsive_display -->
+<div id='div-gpt-ad-1767888273985-0' style='min-width: 300px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1767888273985-0'); });
+  </script>
+</div>
 <section class="px-4 py-6 space-y-6 text-gray-800 dark:text-gray-200 leading-relaxed text-base">
 <h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-2">Understanding US Car Insurance Market Dynamics</h2>
 <p>
@@ -209,12 +216,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
 <p class="px-4 text-xs text-gray-400 italic mt-2">*Cost estimates vary by individual risk profile.</p>
 </section>
 <!-- Ad Placement 2 -->
-<ins class="adsbygoogle ad-slot ad-2"
-     style="display:block"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="5397377818"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+
 
 <!-- Cost by State Section -->
 <section class="px-4 py-6">
@@ -424,12 +426,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
 <!-- Footer -->
 <footer class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 pt-8 pb-12 px-4">
 <!-- Ad Placement 4 -->
-<ins class="adsbygoogle ad-slot ad-4"
-    style="display:block"
-     data-ad-client="ca-pub-2885050972904135"
-     data-ad-slot="7625097662"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins> 
+
 <div class="flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="flex items-center gap-2">
 <div class="text-gray-400 flex size-6 shrink-0 items-center justify-center">
@@ -449,43 +446,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
             </div>
 </footer>
 </main>
-  <script>
-(function () {
-  const slots = document.querySelectorAll(".ad-slot");
-  const loaded = new WeakSet();
-
-  function loadAd(slot) {
-    if (loaded.has(slot)) return;
-    loaded.add(slot);
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  }
-
-  /* 1️⃣ Require REAL user intent */
-  const intentEvents = ["scroll", "mousemove", "touchstart", "keydown"];
-  let intentDetected = false;
-
-  intentEvents.forEach(evt => {
-    window.addEventListener(evt, () => {
-      intentDetected = true;
-    }, { once: true });
-  });
-
-  /* 2️⃣ Load ads only when viewable + intent */
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && intentDetected) {
-        loadAd(entry.target);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    rootMargin: "250px"
-  });
-
-  slots.forEach(slot => observer.observe(slot));
-})();
-</script>
-
+ 
 </body></html>  
 
   
