@@ -104,18 +104,24 @@ $description = "$keyword — Learn about car insurance in the United States, inc
   }
 }
 </script>
-  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+ <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+
 <script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/23335213785/atf_responsive_display', [[336, 280], [300, 250], [728, 90], [300, 600], [970, 250]], 'div-gpt-ad-1767888273985-0').addService(googletag.pubads());
+  googletag.cmd.push(function () {
+    googletag.defineSlot(
+      '/23335213785/atf_responsive_display',
+      [[336,280],[300,600],[300,250]],
+      'div-gpt-ad-atf'
+    ).addService(googletag.pubads());
+
     googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs(true);
     googletag.enableServices();
   });
 </script>
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
-  crossorigin="anonymous"></script>
+
+
+
   
 </head>
 <body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-gray-100 font-display transition-colors duration-200">
@@ -151,11 +157,14 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                 <?php echo $keyword; ?> Navigating the complex landscape of auto insurance in the United States requires understanding various factors that influence coverage options and premium costs. This guide aims to provide objective data to help consumers evaluate their choices.
             </p>
 </section>
-<!-- /23335213785/atf_responsive_display -->
-<div id='div-gpt-ad-1767888273985-0' style='min-width: 300px; min-height: 90px;'>
+<div id="div-gpt-ad-atf" style="min-width:336px; min-height:280px;">
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1767888273985-0'); });
+    googletag.cmd.push(function () {
+      googletag.display('div-gpt-ad-atf');
+    });
   </script>
+</div>
+
 </div>
 <section class="px-4 py-6 space-y-6 text-gray-800 dark:text-gray-200 leading-relaxed text-base">
 <h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-2">Understanding US Car Insurance Market Dynamics</h2>
