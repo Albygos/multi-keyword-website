@@ -106,20 +106,24 @@ $description = "$keyword — Learn about car insurance in the United States, inc
 </script>
  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 <script>
-  googletag.cmd.push(function () {
-    googletag.defineSlot(
-      '/23335213785/atf_responsive_display',
-      [[336,280],[300,600],[300,250]],
-      'div-gpt-ad-atf'
-    ).addService(googletag.pubads());
-
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23335213785/atf_responsive_display', [[300, 250], [728, 90], [300, 600], [970, 250], [336, 280]], 'div-gpt-ad-1767947630913-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs(true);
     googletag.enableServices();
   });
 </script>
-
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23335213785/23456765', [[980, 90], [168, 42], [120, 20], 'fluid', [216, 36], [250, 360], [960, 90], [200, 200], [120, 60], [120, 30], [970, 66], [125, 125], [180, 150], [200, 446], [980, 120], [88, 31], [160, 600], [970, 90], [120, 90], [250, 250], [220, 90], [1024, 768], [240, 133], [120, 240], [292, 30], [240, 400], [970, 250], [216, 54], [234, 60], [120, 600], [168, 28]], 'div-gpt-ad-1767948588789-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
 
 
   
@@ -157,12 +161,12 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                 <?php echo $keyword; ?> Navigating the complex landscape of auto insurance in the United States requires understanding various factors that influence coverage options and premium costs. This guide aims to provide objective data to help consumers evaluate their choices.
             </p>
 </section>
-<div id="div-gpt-ad-atf" style="min-width:336px; min-height:280px;">
+<!-- /23335213785/atf_responsive_display -->
+<div id='div-gpt-ad-1767947630913-0' style='min-width: 300px; min-height: 90px;'>
   <script>
-    googletag.cmd.push(function () {
-      googletag.display('div-gpt-ad-atf');
-    });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1767947630913-0'); });
   </script>
+</div>
 </div>
 
 </div>
@@ -226,7 +230,12 @@ $description = "$keyword — Learn about car insurance in the United States, inc
 </section>
 <!-- Ad Placement 2 -->
 
-
+<!-- /23335213785/23456765 -->
+<div id='div-gpt-ad-1767948588789-0' style='min-width: 88px; min-height: 20px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1767948588789-0'); });
+  </script>
+</div>
 <!-- Cost by State Section -->
 <section class="px-4 py-6">
 <h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-6">Regional Cost Analysis</h2>
