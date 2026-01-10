@@ -41,6 +41,7 @@ $description = "$keyword — Learn about car insurance in the United States, inc
   <meta property="og:description" content="<?php echo $description; ?>" />
   <meta property="og:url" content="<?php echo $domain; ?>" />
   <meta property="og:type" content="website" />
+  <meta name="ezoic-site-verification" content="tej8e2xFXkmB5bJzvk96qtkd4Ae6wn" />
   <meta property="og:image" content="<?php echo $domain; ?>assets/preview.jpg" />
   <link rel="canonical" href="<?php echo $domain . '?q=' . urlencode($keyword); ?>" />
   <link rel="stylesheet" href="assets/style.css" />
