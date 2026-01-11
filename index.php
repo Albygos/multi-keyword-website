@@ -162,6 +162,19 @@ $description = "$keyword — Learn about car insurance in the United States, inc
                 <?php echo $keyword; ?> Navigating the complex landscape of auto insurance in the United States requires understanding various factors that influence coverage options and premium costs. This guide aims to provide objective data to help consumers evaluate their choices.
             </p>
 </section>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
+     crossorigin="anonymous"></script>
+<!-- Full card -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="8237866406"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  
 <!-- /23335213785/atf_responsive_display -->
 <div id='div-gpt-ad-1767947630913-0' style='min-width: 300px; min-height: 90px;'>
   <script>
